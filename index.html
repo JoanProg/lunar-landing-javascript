@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Lunar Lander</title>
- <meta name="description" content="">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
- <link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
- <script src="js/js.js"></script>
+	<title>Lunar Lander</title>
+ 	<meta charset="utf-8"> 
+ 	<meta name="description" content="">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
+ 	<link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
+ 	<script src="js/js.js"></script>
 </head>
 <body>
- <div id="nave">
- <img src="img/nave.png" alt="img nave">
- </div>
- <div class="a">
- <div id="showm">show menu</div>
- <ul id="cpanel">
-  <li>Velocidad <span id="velocidad">100</span> m/s</li>
-  <li>Fuel <span id="fuel">100</span> l</li>
-  <li>Altura <span id="altura">70</span> m</li>
- </ul>
- </div><div class="b">b</div><div class="c">
- <div id="hidem">hide menu</div>
- <ul id="menu">
-  <li>Jugar</li>
-  <li>Instrucciones</li>
-  <li>Acerca de...</li>
- </ul>
- </div>
- <div class="d">d</div>
+	<div id="nave">
+		<img id="imgnave" src="img/nave.png" alt="img nave" />
+		<img id="imgnaveon" src="img/fuego.png" alt="img naveon" />
+	</div>
+	<div class="a">
+		<div id="cpanel">
+			<div id="parche1"> </div>
+  			<img id="velocidad" src="img/aguja.png" alt="velocidad"> 
+  			<div id="parche2"> </div>
+  			<img id="combustible" src="img/aguja.png" alt="combustible">
+  			<div id="parche3"> </div>
+  			<img id="altura" src="img/aguja.png" alt="altura">
+  		</div>
+ 	</div>
+ 	<div class="b">
+
+ 	</div>
+ 	<div class="c">
+
+ 		<div id="menu">
+  				<div id="info"> </div>
+  				<div id="Pausa"> </div>
+  				<div id="Jugar"> </div>
+  				<div id="reinicio"> </div>
+ 		</div>
+ 		<div id="boton"> </div>
+ 	</div>
+ 	<div class="d">
+ 		<img id="planet" src="img/planet.png" alt="planet"/>
+ 	</div>
 </body>
 </html>
