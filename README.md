@@ -10,4 +10,4 @@ Funcionamientos del juego:
 Mejoras:
 * Los diseños de las imagenes del juego, están totalmente comprimidas con el tinypng.  
 
-Juego: https://rawgit.com/JoanProg/lunar-landing-javascript/master/index.html
+Juego: https://cdn.rawgit.com/JoanProg/lunar-landing-javascript/90f0f439/index.html
