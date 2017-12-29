@@ -1,10 +1,193 @@
 body,html{height:100%;padding:0px;margin:0px;}
-.a{background-color:#00bcd4;}
-.b{background-color:red;}
-.c{background-color:#cddc39;display:block !important}
-.a,.b,.c{display:inline-block;width:33.33%;height:100%;float:left;}
-.d{background-color:pink;height:10%;width:100%;position:fixed;bottom:0px;}
-#nave{text-align:center;position:fixed;top:10%;width:100%;height:20%}
-#nave img{height:100%;}
-#cpanel{}
-#hidem,#showm{display:none}
+#contenedor,html{
+	height:100%;padding:0px;margin:0px;
+	background-image: url("../img/fondo.jpg");
+}
+.a{
+	background-color:#00bcd4: none;
+}
+.b{
+	background-color:red: none;
+}
+.c{
+	background-color:#cddc39: none;
+}
+.a,.b,.c{
+	display:inline-block;
+	width:33.33%;
+	height:100%;
+	float:left;
+}
+.d{
+	background-color:pink: none;
+	height:10%;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left: 0%;
+}
+
+/*Ajustes de la nave y del botón*/
+#nave{
+	text-align:center;
+	position:fixed;
+	top:15%;
+	width:100%;
+	height:20%;
+}
+
+#imgnave{
+	height: 200px;
+	width: 150px;
+	display: block;
+	margin: auto;
+}
+
+#imgnaveon{
+	position: absolute;
+	top: 100%;
+	right: 48.5%;
+	height: 60px;
+	display: none;
+}
+
+/*Ajustes del menu y del panel*/
+#menu{
+	position: fixed;
+}
+
+#cpanel{  }
+#hidem{
+	color: white: none;
+	display: none;
+}
+#info:hover {background-color: red;}
+#Pausa:hover {background-color: red;}
+#Jugar:hover {background-color: red;}
+#reinicio:hover {background-color: red;}
+
+#info{ 
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/boton1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	right: 5%;
+	top: 5%;
+}
+
+#Pausa{
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/boton2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	right: 10%;
+	top: 20%;
+}
+
+#Jugar{
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/boton3.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: none;
+	top: 20%;
+	right: 10%;
+}	
+
+#reinicio{
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/boton4.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 35%;
+	right: 10%;
+}
+
+/*Ajustes de la velocidad, altura y combustible (Parches=los sprites de los contadores)*/
+#velocidad{
+	position: fixed;
+	top: 8%;
+	left: 5.2%;
+	height: 50px;
+	width: 10px;
+	transform:rotate(0deg);
+}
+
+#combustible{
+	position: fixed;
+	top: 20%;
+	left: 10.5%;
+	height: 50px;
+	width: 10px;
+	transform:rotate(70deg);
+}
+
+#altura{
+	position: fixed;
+	top: 28%;
+	left: 5.2%;
+	height: 50px;
+	width: 10px;
+	transform:rotate(0deg);
+}
+
+#parche1, #parche3{
+	top: 5%;
+	left:2%;
+}
+#parche1{
+	position: fixed;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/medidor.png");
+	background-repeat: no-repeat;
+}
+
+#parche2{
+	position: fixed;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/fuel.png");
+	background-repeat: no-repeat;
+	top: 15%;
+	left: 7%;
+}
+
+#parche3{
+	position: fixed;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/medidor.png");
+	background-repeat: no-repeat;
+	top: 25%;
+}
+
+/*Planeta*/
+#planet{
+	position: fixed;
+	left: 23.5%;
+}
+
+/*boton*/
+#boton{
+	position: fixed;
+	height: 150px;
+	width: 150px;
+	background-image: url("../img/boton.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	bottom: 10%;
+	right: 5%;
+}
