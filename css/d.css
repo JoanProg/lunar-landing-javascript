@@ -1,10 +1,353 @@
 body,html{height:100%;padding:0px;margin:0px;}
-.a{background-color:#00bcd4;}
-.b{background-color:red;}
-.c{background-color:#cddc39;display:block !important}
-.a,.b,.c{display:inline-block;width:33.33%;height:100%;float:left;}
-.d{background-color:pink;height:10%;width:100%;position:fixed;bottom:0px;}
-#nave{text-align:center;position:fixed;top:10%;width:100%;height:20%}
-#nave img{height:100%;}
-#cpanel{}
-#hidem,#showm{display:none}
+#contenedor,html{
+	height:100%;padding:0px;margin:0px;
+	background-image: url("../img/fondo.jpg");
+}
+.a{
+	background-color:#00bcd4: none;
+}
+.b{
+	background-color:red: none;
+}
+.c{
+	background-color:#cddc39: none;
+}
+.a,.b,.c{
+	display:inline-block;
+	width:33.33%;
+	height:100%;
+	float:left;
+}
+.d{
+	background-color:pink: none;
+	height:10%;
+	width:100%;
+	position:fixed;
+	bottom:0px;
+	left: 0%;
+}
+
+/*Ajustes de la nave y del botón*/
+#nave{
+	text-align:center;
+	position:fixed;
+	top:15%;
+	width:100%;
+	height:20%;
+}
+
+#imgnave{
+	height: 200px;
+	width: 150px;
+	display: block;
+	margin: auto;
+}
+
+#imgnaveon{
+	position: absolute;
+	top: 100%;
+	right: 48.5%;
+	height: 60px;
+	display: none;
+}
+
+/*Ajustes del menu y del panel*/
+#menu{
+	position: fixed;
+}
+
+#cpanel{  }
+#hidem{
+	color: white: none;
+	display: none;
+}
+
+#guia:hover{
+	background-image: url(../img/botonaA.png);
+	position: fixed;
+	font-family: Helvetica, sans-serif;
+	font-color: #ffffff;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+#Pausa:hover {background-image: url("../img/boton2H.png");}
+#Jugar:hover {background-image: url("../img/boton3H.png");}
+#reinicio:hover {background-image: url("../img/boton4H.png");}
+#guia:hover{background-image: url("../img/botonaA.png");}
+
+#guia{
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/botona.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 39%;
+	right: 3.5%;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+#guia a{
+	position: fixed;
+	font-family: ARIAL, fantasy;
+	color: #ffffff;
+	font-size: 100%;
+	text-decoration: none;
+	padding: 2.5%;
+	height: 5%;
+	width: 0.5%;
+	right: 3.5%;
+	padding-right: 6%;
+
+}
+
+#Pausa{
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/boton2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	right: 3.5%;
+	top: 5%;
+}
+
+#Jugar{
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/boton3.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: none;
+	top: 5%;
+	right: 3.5%;
+}	
+
+#reinicio{
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/boton4.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 22%;
+	right: 3.5%;
+}
+
+/*Ajustes de la velocidad, altura y combustible (Parches=los sprites de los contadores)*/
+#text1{
+	position: fixed;
+	top:5%;
+	left: 4.5%;
+}
+
+#marco1{
+	position: fixed;
+	top: 5%;
+	left: 4%;
+	height: 15%;
+	width: 10%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+}
+
+#velocidad{
+	position: fixed;
+	top: 11%;
+	left: 4.5%;
+	font-family: arial, sans-serif;
+	font-size: 300%;
+}
+
+#text2{
+	position: fixed;
+	top:22.5%;
+	left: 4.5%;
+}
+
+#marco2{
+	position: fixed;
+	top: 22.5%;
+	left: 4%;
+	height: 15%;
+	width: 10%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+}
+#altura{
+	position: fixed;
+	top: 28.5%;
+	left: 4.5%;
+	font-family: arial, sans-serif;
+	font-size: 300%;
+}
+
+#text3{
+	position: fixed;
+	top:40%;
+	left: 4.5%;
+	font-size: 100%;
+}
+
+#marco3{
+	position: fixed;
+	top: 40.5%;
+	left: 4%;
+	height: 15%;
+	width: 10%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+}
+
+#combustible{
+	position: fixed;
+	top: 47%;
+	left: 4.5%;
+	font-family: arial, sans-serif;
+	font-size: 300%;
+}
+
+/*Planeta*/
+#planet{
+	position: fixed;
+	left: 23.5%;
+	background-image: url("../img/planet.png");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+/*boton*/
+#boton{
+	position: fixed;
+	height: 150px;
+	width: 150px;
+	background-image: url("../img/boton.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	bottom: 10%;
+	right: 5%;
+}
+
+/*Diseño para la página de guia e información*/
+#how{
+	position: fixed;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 90%;
+	width: 85%;
+	left: 7.5%;
+	top: 5%;
+}
+
+#botonSoporte:hover {background-image: url("../img/botonaA.png");}
+
+#botonSoporte{ 
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/botona.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	right: 10%;
+	bottom: 10%;
+}
+
+#botonSoporte a{
+	position: fixed;
+	font-family: ARIAL, fantasy;
+	color: #ffffff;
+	font-size: 200%;
+	text-decoration: none;
+	padding: 2.5%;
+	height: 4.9%;
+	width: 0.5%;
+	right: 10%;
+	padding-right: 6%;
+
+}
+
+#volver:hover{background-image: url("../img/avisoH.png");}
+#volver{
+	position: fixed;
+	bottom: 10%;
+	left: 10%;
+	height: 10%;
+	width: 12.5%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#volver a{
+	position: fixed;
+	font-family: arial, Fantasy;
+	text-decoration: none;
+	color: #ffffff;
+	bottom: 10%;
+	left:10.2%;
+	font-size: 120%;
+	padding: 1.4%;
+	padding-left: 0%;
+	
+}
+
+#titulo{
+	position: fixed;
+	left: 40%;
+}
+
+/*Información*/
+#creadores{
+	position: fixed;
+	top: 15%;
+	left: 10%;
+}
+
+#fuentes{
+	position: fixed;
+	left: 65%;
+	top: 15%;
+}
+
+#juguete{
+	position:fixed;
+	background-image: url("../img/nave.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 40%;
+	width: 20%;
+	left: 38%;
+	top: 20%;
+}
+
+/*guia*/
+
+#parrafo{
+	position: fixed;
+	width: 50%;
+	font-size: 150%;
+	font-family: arial, sans-serif;
+	top: 25%;
+	left: 15%;
+}
+
+#botonEjemplo{
+	position: fixed;
+	background-image: url("../img/boton.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 15%;
+	height: 30%;
+	right: 10%;
+	top: 35%;
+}
