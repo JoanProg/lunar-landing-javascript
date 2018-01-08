@@ -8,7 +8,7 @@ Cambios y mejoras:
 * he cambiado la función de las agujas por los contadores (Por motivos de dificultad y confusión al jugador). 
 * Reacción animada (Durante el fin de la partida). 
 
-Juego: 
+Juego: https://cdn.rawgit.com/JoanProg/lunar-landing-javascript/v2.0/index.html
 
 # V1.0
 subido: 30/12/17.
