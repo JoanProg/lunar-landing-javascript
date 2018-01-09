@@ -61,21 +61,47 @@ body,html{height:100%;padding:0px;margin:0px;}
 	color: white: none;
 	display: none;
 }
-#info:hover {background-color: red;}
-#Pausa:hover {background-color: red;}
-#Jugar:hover {background-color: red;}
-#reinicio:hover {background-color: red;}
 
-#info{ 
+#guia:hover{
+	background-image: url(../img/botonaA.png);
+	position: fixed;
+	font-family: Helvetica, sans-serif;
+	font-color: #ffffff;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+#Pausa:hover {background-image: url("../img/boton2H.png");}
+#Jugar:hover {background-image: url("../img/boton3H.png");}
+#reinicio:hover {background-image: url("../img/boton4H.png");}
+#guia:hover{background-image: url("../img/botonaA.png");}
+
+#guia{
 	position: fixed;
 	float: right;
 	height: 100px;
 	width: 100px;
-	background-image: url("../img/boton1.png");
+	background-image: url("../img/botona.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	right: 5%;
-	top: 5%;
+	top: 39%;
+	right: 3.5%;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+#guia a{
+	position: fixed;
+	font-family: ARIAL, fantasy;
+	color: #ffffff;
+	font-size: 100%;
+	text-decoration: none;
+	padding: 2.5%;
+	height: 5%;
+	width: 0.5%;
+	right: 3.5%;
+	padding-right: 6%;
+
 }
 
 #Pausa{
@@ -86,8 +112,8 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-image: url("../img/boton2.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	right: 10%;
-	top: 20%;
+	right: 3.5%;
+	top: 5%;
 }
 
 #Jugar{
@@ -99,8 +125,8 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-repeat: no-repeat;
 	background-size: 100%;
 	display: none;
-	top: 20%;
-	right: 10%;
+	top: 5%;
+	right: 3.5%;
 }	
 
 #reinicio{
@@ -111,73 +137,91 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-image: url("../img/boton4.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	top: 35%;
-	right: 10%;
+	top: 22%;
+	right: 3.5%;
 }
 
 /*Ajustes de la velocidad, altura y combustible (Parches=los sprites de los contadores)*/
+#text1{
+	position: fixed;
+	top:5%;
+	left: 4.5%;
+}
+
+#marco1{
+	position: fixed;
+	top: 5%;
+	left: 4%;
+	height: 15%;
+	width: 10%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+}
+
 #velocidad{
 	position: fixed;
-	top: 8%;
-	left: 5.2%;
-	height: 50px;
-	width: 10px;
-	transform:rotate(0deg);
+	top: 11%;
+	left: 4.5%;
+	font-family: arial, sans-serif;
+	font-size: 300%;
+}
+
+#text2{
+	position: fixed;
+	top:22.5%;
+	left: 4.5%;
+}
+
+#marco2{
+	position: fixed;
+	top: 22.5%;
+	left: 4%;
+	height: 15%;
+	width: 10%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+}
+#altura{
+	position: fixed;
+	top: 28.5%;
+	left: 4.5%;
+	font-family: arial, sans-serif;
+	font-size: 300%;
+}
+
+#text3{
+	position: fixed;
+	top:40%;
+	left: 4.5%;
+	font-size: 100%;
+}
+
+#marco3{
+	position: fixed;
+	top: 40.5%;
+	left: 4%;
+	height: 15%;
+	width: 10%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
 }
 
 #combustible{
 	position: fixed;
-	top: 20%;
-	left: 10.5%;
-	height: 50px;
-	width: 10px;
-	transform:rotate(70deg);
-}
-
-#altura{
-	position: fixed;
-	top: 28%;
-	left: 5.2%;
-	height: 50px;
-	width: 10px;
-	transform:rotate(0deg);
-}
-
-#parche1, #parche3{
-	top: 5%;
-	left:2%;
-}
-#parche1{
-	position: fixed;
-	height: 100px;
-	width: 100px;
-	background-image: url("../img/medidor.png");
-	background-repeat: no-repeat;
-}
-
-#parche2{
-	position: fixed;
-	height: 100px;
-	width: 100px;
-	background-image: url("../img/fuel.png");
-	background-repeat: no-repeat;
-	top: 15%;
-	left: 7%;
-}
-
-#parche3{
-	position: fixed;
-	height: 100px;
-	width: 100px;
-	background-image: url("../img/medidor.png");
-	background-repeat: no-repeat;
-	top: 25%;
+	top: 47%;
+	left: 4.5%;
+	font-family: arial, sans-serif;
+	font-size: 300%;
 }
 
 /*Planeta*/
 #planet{
 	position: fixed;
 	left: 23.5%;
+	background-image: url("../img/planet.png");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
 }
 
 /*boton*/
@@ -190,4 +234,120 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-size: 100%;
 	bottom: 10%;
 	right: 5%;
+}
+
+/*Diseño para la página de guia e información*/
+#how{
+	position: fixed;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 90%;
+	width: 85%;
+	left: 7.5%;
+	top: 5%;
+}
+
+#botonSoporte:hover {background-image: url("../img/botonaA.png");}
+
+#botonSoporte{ 
+	position: fixed;
+	float: right;
+	height: 100px;
+	width: 100px;
+	background-image: url("../img/botona.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	right: 10%;
+	bottom: 10%;
+}
+
+#botonSoporte a{
+	position: fixed;
+	font-family: ARIAL, fantasy;
+	color: #ffffff;
+	font-size: 200%;
+	text-decoration: none;
+	padding: 2.5%;
+	height: 4.9%;
+	width: 0.5%;
+	right: 10%;
+	padding-right: 6%;
+
+}
+
+#volver:hover{background-image: url("../img/avisoH.png");}
+#volver{
+	position: fixed;
+	bottom: 10%;
+	left: 10%;
+	height: 10%;
+	width: 12.5%;
+	background-image: url("../img/aviso.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#volver a{
+	position: fixed;
+	font-family: arial, Fantasy;
+	text-decoration: none;
+	color: #ffffff;
+	bottom: 10%;
+	left:10.2%;
+	font-size: 120%;
+	padding: 1.4%;
+	padding-left: 0%;
+	
+}
+
+#titulo{
+	position: fixed;
+	left: 40%;
+}
+
+/*Información*/
+#creadores{
+	position: fixed;
+	top: 15%;
+	left: 10%;
+}
+
+#fuentes{
+	position: fixed;
+	left: 65%;
+	top: 15%;
+}
+
+#juguete{
+	position:fixed;
+	background-image: url("../img/nave.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 40%;
+	width: 20%;
+	left: 38%;
+	top: 20%;
+}
+
+/*guia*/
+
+#parrafo{
+	position: fixed;
+	width: 50%;
+	font-size: 150%;
+	font-family: arial, sans-serif;
+	top: 25%;
+	left: 15%;
+}
+
+#botonEjemplo{
+	position: fixed;
+	background-image: url("../img/boton.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 15%;
+	height: 30%;
+	right: 10%;
+	top: 35%;
 }

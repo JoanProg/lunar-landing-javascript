@@ -62,7 +62,9 @@ function stop(){
 function moverNave(){
 	//cambiar velocidad y posicion
 	v +=a*dt;
+	document.getElementById("velocidad").innerHTML=v.toFixed(2);
 	y +=v*dt;
+	document.getElementById("altura").innerHTML=y.toFixed(2);
 	//actualizar marcadores
 	
 	//mover hasta que top sea un 70% de la pantalla
@@ -70,7 +72,7 @@ function moverNave(){
 		document.getElementById("nave").style.top = y+"%"; 
 	} else {
 		stop();
-		alert("Nave aterrizada")
+		Fin();
 	}
 }
 function motorOn(){
@@ -93,16 +95,19 @@ function motorOff(){
 	clearInterval(timerFuel);
 	timerFuel=null;
 }
+
 function actualizarFuel(){
 	//Restamos combustible hasta que se agota
 	c-=0.1;
-	if (c < 0 ) c = 0;
+	if (c < 0 ){
+		c = 0;
+		motorOff();
+	}
+	document.getElementById("combustible").innerHTML=c.toFixed();
 }
-
-//función de info//
-
 //Resetear el juego//
 function reinicio(){
+	c = 100;
 	y = 15;
 	v = 0;
 	g = 1.622;
@@ -121,4 +126,14 @@ function Jugar(){
 	start();
 	document.getElementById("Jugar").style.display="none";
 	document.getElementById("Pausa").style.display="inline-block";
+}
+
+//Finalizar el juego
+function Fin(){
+	if(v>5) {
+		document.getElementById("imgnave").src = "img/explosion.gif";
+		alert("La misión ha sido un fracaso. Todos los tripulantes están muertos. ¿Quieres volver a empezar?");
+	} else {
+		alert("¡ENHORABUENA! La nave está aterrizada. Sanos y salvos");
+	}
 }
