@@ -9,7 +9,7 @@ Cambios y mejoras:
 * Tiene el botón del menu (Para movil).
 * Tiene algunas mejoras respeto con la versión anterior (V 2.0).
 
-Juego: https://cdn.rawgit.com/JoanProg/lunar-landing-javascript/52299e0e/index.html
+Juego: https://cdn.rawgit.com/JoanProg/lunar-landing-javascript/e1b18bfa/index.html
 
 # V2.0
 subido: 09/01/18.
