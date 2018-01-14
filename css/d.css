@@ -37,7 +37,7 @@ body,html{height:100%;padding:0px;margin:0px;}
 }
 
 #imgnave{
-	height: 200px;
+	height: 150px;
 	width: 150px;
 	display: block;
 	margin: auto;
@@ -45,9 +45,13 @@ body,html{height:100%;padding:0px;margin:0px;}
 
 #imgnaveon{
 	position: absolute;
-	top: 100%;
+	top: 105%;
 	right: 48.5%;
 	height: 60px;
+	display: none;
+}
+
+#menuMovil{
 	display: none;
 }
 
@@ -75,6 +79,8 @@ body,html{height:100%;padding:0px;margin:0px;}
 #Jugar:hover {background-image: url("../img/boton3H.png");}
 #reinicio:hover {background-image: url("../img/boton4H.png");}
 #guia:hover{background-image: url("../img/botonaA.png");}
+#conf:hover{background-image: url("../img/boton5H.png");}
+
 
 #guia{
 	position: fixed;
@@ -84,8 +90,8 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-image: url("../img/botona.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	top: 39%;
-	right: 3.5%;
+	top: 5%;
+	right: 2%;
 	font-size: 2em;
 	text-decoration: none;
 }
@@ -99,7 +105,7 @@ body,html{height:100%;padding:0px;margin:0px;}
 	padding: 2.5%;
 	height: 5%;
 	width: 0.5%;
-	right: 3.5%;
+	right: 2%;
 	padding-right: 6%;
 
 }
@@ -112,7 +118,7 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-image: url("../img/boton2.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	right: 3.5%;
+	right: 10%;
 	top: 5%;
 }
 
@@ -126,7 +132,7 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-size: 100%;
 	display: none;
 	top: 5%;
-	right: 3.5%;
+	right: 10%;
 }	
 
 #reinicio{
@@ -138,9 +144,68 @@ body,html{height:100%;padding:0px;margin:0px;}
 	background-repeat: no-repeat;
 	background-size: 100%;
 	top: 22%;
-	right: 3.5%;
+	right: 10%;
 }
 
+#conf{
+	position: fixed;
+	background-image: url("../img/boton5.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 100px;
+	width: 100px;
+	top: 22%;
+	right: 2%;
+}
+
+/*Capa de ajustes*/
+#ajustes{
+	display: none;
+	position: fixed;
+	background-image: url("../img/aviso.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 45%;
+	top: 25%;
+	right: 25%;
+}
+
+#ajustes h3{
+	position: fixed;
+	right: 45%;
+	font-size: 300%;
+	top: 20%;
+}
+
+#ajustes p{
+	position: fixed;
+	font-size: 200%;
+	top: 35%;
+	left: 40%;
+}
+
+#dificultad{
+	position: fixed;
+	font-size: 300%;
+	top: 50%;
+	right: 45%
+}
+
+#finalizar:hover{
+	background-image: url("../img/botonCA.png");
+}
+#finalizar{
+	position: fixed;
+	background-image: url("../img/botonC.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 10.5%;
+	width: 5%;
+	top: 27%;
+	right: 27%;
+}
+#finalizarMovil{display:none;}
 /*Ajustes de la velocidad, altura y combustible (Parches=los sprites de los contadores)*/
 #text1{
 	position: fixed;
