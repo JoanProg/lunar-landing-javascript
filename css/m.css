@@ -227,7 +227,7 @@ body,html{height:100%;padding:0px;margin:0px;}
 	width: 20%;
 } 
 
-#reinicioMovil: hover{ background-image: url("../img/boton4H.png");}
+#reinicioMovil:hover { background-image: url("../img/boton4H.png");}
 #reinicioMovil{
 	display: none;
 	position: fixed;
