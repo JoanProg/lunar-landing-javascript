@@ -1,5 +1,16 @@
 # Lunar lander con html, css y javascript
 
+# V3.0
+subido: 14/01/18.
+
+Cambios y mejoras: 
+* He añadidos dos dificultades en el juego: Básica y profesional.
+* He mejorado la animación final del juego.
+* Tiene el botón del menu (Para movil).
+* Tiene algunas mejoras respeto con la versión anterior (V 2.0).
+
+Juego: https://cdn.rawgit.com/JoanProg/lunar-landing-javascript/v2.0/index.html
+
 # V2.0
 subido: 09/01/18.
 
